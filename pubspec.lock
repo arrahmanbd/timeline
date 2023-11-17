@@ -81,14 +81,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.3"
-  csslib:
-    dependency: transitive
-    description:
-      name: csslib
-      sha256: "706b5707578e0c1b4b7550f64078f0a0f19dec3f50a178ffae7006b0a9ca58fb"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.0"
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -153,14 +145,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "7.0.0"
-  fleather:
-    dependency: "direct main"
-    description:
-      name: fleather
-      sha256: "753d8685769fa83e18c69f6eca8df753fd2cb400f4a6edaa6b81f525d700b31f"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.10.0"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -277,14 +261,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.1.0"
-  html:
-    dependency: transitive
-    description:
-      name: html
-      sha256: "3a7812d5bcd2894edf53dfaf8cd640876cf6cef50a8f238745c8b8120ea74d3a"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.15.4"
   http:
     dependency: transitive
     description:
@@ -357,14 +333,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.10.0"
-  parchment:
-    dependency: transitive
-    description:
-      name: parchment
-      sha256: b4181d777f3b869f676255edc1948a4589f254bba4b220a005f9f48a23a2256a
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.9.0"
   pasteboard:
     dependency: transitive
     description:
@@ -453,14 +421,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.7.3"
-  quill_delta:
-    dependency: "direct main"
-    description:
-      name: quill_delta
-      sha256: a91c0e5354b32b5344d2514580dc6f453abe2723da92439019aa728da64d8350
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.0.0-nullsafety.2"
   quiver:
     dependency: transitive
     description:

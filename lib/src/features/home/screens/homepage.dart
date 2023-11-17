@@ -3,7 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:timeline/src/features/home/controller/home_controller.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
-import '../../editor/screens/editor.dart';
+import '../../editor/screens/editor_screen.dart';
+import '../../settings/screen/setting_screen.dart';
 
 class MyTimeLine extends ConsumerWidget {
   static const String routeName = '/home';
@@ -93,6 +94,13 @@ class MyTimeLine extends ConsumerWidget {
         ),
         centerTitle: true,
         backgroundColor: Colors.orange,
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.pushNamed(context, SettingScreen.routeName);
+              },
+              icon: Icon(Icons.settings))
+        ],
       ),
       body: buildTimeLine(),
       // Column(
@@ -178,7 +186,7 @@ class MyTimeLine extends ConsumerWidget {
           onPressed: () {
             // Navigate to screen to add new note
             //ref.read(noteProvider).add();
-            Navigator.pushNamed(context, MobileEditor.routeName);
+            Navigator.pushNamed(context, EditorScreen.routeName);
           },
           child: const Icon(Icons.add),
         ),

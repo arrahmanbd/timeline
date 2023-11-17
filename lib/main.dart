@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:timeline/src/features/onboarding/screens/onBoarding.dart';
+import 'package:timeline/src/features/home/screens/homepage.dart';
+import 'package:timeline/src/features/settings/screen/setting_screen.dart';
 import 'package:timeline/src/utils/router.dart';
 
 main() async {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.orange),
         useMaterial3: true,
       ),
-      home: const OnBoarding(),
+      home: MyTimeLine(),
       onGenerateRoute: (settings) => generateRoute(settings),
     );
   }

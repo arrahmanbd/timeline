@@ -44,8 +44,6 @@ dependencies:
   lottie: ^2.7.0
   timeline_tile: ^2.0.0
   google_fonts: ^6.1.0
-  fleather: ^1.10.0
-  quill_delta: ^3.0.0-nullsafety.2
   flutter_quill: ^8.5.4
   url_launcher: ^6.2.1
 
