@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:timeline/src/features/editor/screens/editor_screen.dart';
-import 'package:timeline/src/features/home/screens/homepage.dart';
-import 'package:timeline/src/features/lock/screens/lock_screen.dart';
+import 'package:sqflite/sqflite.dart';
+import 'package:timeline/src/features/take_note/screens/editor_screen.dart';
+import 'package:timeline/src/features/lock_screen/screens/lock_screen.dart';
 import 'package:timeline/src/features/onboarding/screens/onBoarding.dart';
 
+import '../features/home_screen/screens/homepage.dart';
 import '../features/settings/screen/setting_screen.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
@@ -24,6 +25,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => EditorScreen(),
       );
+
     case SettingScreen.routeName:
       return MaterialPageRoute(
         builder: (context) => SettingScreen(),

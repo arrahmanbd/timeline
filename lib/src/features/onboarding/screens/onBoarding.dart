@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:lottie/lottie.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'package:timeline/src/features/lock/screens/lock_screen.dart';
+import 'package:timeline/src/features/lock_screen/screens/lock_screen.dart';
 import 'package:timeline/src/features/onboarding/controllers/onboard_controlller.dart';
+import 'package:timeline/src/features/settings/controller/setting_state_controller.dart';
 
 import '../../../common/widgets/button.dart';
 
@@ -99,7 +100,9 @@ class OnBoarding extends ConsumerWidget {
                 text: slideIndex == 2 ? 'Continue' : 'Skip',
                 onPressed: () {
                   ref.read(onBoardProvider).onChange(slideIndex + 1);
-                  Navigator.pushNamed(context, LockScreen.routeName);
+                  ref.read(settingProvider.notifier).onBoarding(false);
+                  if (slideIndex == 2)
+                    Navigator.pushNamed(context, LockScreen.routeName);
                 }),
           )
         ],
